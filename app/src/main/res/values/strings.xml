@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">ChatApp</string>
+    <string name="app_name">TrackPack</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    
+    <string name="home_second">Home Second</string>
+    <string name="favoris">Favoris</string>
+    <string name="profil">Profil</string>
+    <string name="parametres">Paramètres</string>
+    <string name="communication">Communication</string>
+    <string name="title_activity_navigation_drawer">Pulse</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Auth_Text_description">With TrackPack, find the simple and easiest way to send and track your parcel safely from one point to another.</string>
+    <string name="delivery_by_verified_users">Delivery by Verified Users</string>
+    <string name="login">Login</string>
+    <string name="register_text1">Please enter your phone number</string>
+    <string name="otp_text2">We will send you an One Time Password (OTP) \nto your phone number for verification.</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="verification">Verification</string>
+    <string name="verify_text_2">Please type the verification code sent to \nyour phone number</string>
+    <string name="resend_code">Didn\'t received OTP? Resend code</string>
+    <string name="verify_code">Verify code</string>
 </resources>

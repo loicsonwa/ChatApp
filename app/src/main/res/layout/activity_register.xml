@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+    
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+    
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.RegisterActivity"
+            android:background="@color/white">
+        
+            <ImageView
+                android:id="@+id/registerImageView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/free_shipping"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"/>
+        
+            <TextView
+                android:id="@+id/registerTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/registerImageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:text="@string/register_text1"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/purple_200"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+        
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/registerTextView1"
+                android:layout_marginTop="25dp">
+            
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="15dp"
+                    app:ccp_textSize="12sp"
+                    app:ccpDialog_textColor="@color/purple_200"
+                    app:ccp_arrowColor="@color/purple_200"
+                    app:ccp_areaCodeDetectedCountry="true"
+                    app:ccp_defaultLanguage="FRENCH"
+                    app:ccpDialog_cornerRadius="8dp"/>
+            
+            
+                <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                    android:id="@+id/registerNumberEditText"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ccp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="15dp"
+                    app:hasClearButton="true"
+                    app:labelText="Phone number"
+                    app:panelBackgroundColor="#99F4F4F4"
+                    app:primaryColor="@color/purple_200"
+                    app:secondaryColor="@color/purple_200"
+                    app:maxCharacters="9"
+                    app:errorColor="@color/A400red">
+                
+                    <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                        android:id="@+id/extended_edit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:fontFamily="@font/poppins"/>
+                </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+        
+        
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        
+            <TextView
+                android:id="@+id/registerTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/container1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/otp_text2"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/registerTextView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/roundbutton"
+                android:text="@string/send_otp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:onClick="openVerifyPage"/>
+    
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

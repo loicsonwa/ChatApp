@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#191C2C</color>
+    <color name="colorPrimaryDark">#191C2C</color>
+    <color name="colorAccent">#FF6857</color>
+    <color name="line_selected">#2B4CD1</color>
+    <color name="line_focused">#2B4CD1</color>
+    <color name="White">#FFFFFF</color>
+    <color name="logo_color">#D82323</color>
+    <color name="gray">#323859</color>
+    <color name="bottom_gray">#5B5B5B</color>
+    <color name="default_page_blue">#141928</color>
+    <color name="zatrek_blue">#14548c</color>
+</resources>
