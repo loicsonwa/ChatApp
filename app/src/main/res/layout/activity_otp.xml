@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+    
+    </data>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.OTPActivity">
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/verifyContainer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+    
+                <ImageView
+                    android:id="@+id/otpImageView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_circle_chevron_left_foreground"
+                    android:onClick="getBackToVerify"
+                    android:elevation="8dp"/>
+                
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    
+            <ImageView
+                android:id="@+id/verifyImageView"
+                android:layout_width="230dp"
+                android:layout_height="170dp"
+                android:src="@drawable/ic_image_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/verifyContainer1"
+                android:layout_marginTop="20dp"
+                android:transitionName="anim4"
+                android:scaleType="fitXY" />
+            
+            <TextView
+                android:id="@+id/otpTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/verifyImageView"
+                android:layout_marginTop="15dp"
+                android:text="@string/verify_text_2"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:transitionName="anim3"/>
+    
+            <com.chaos.view.PinView
+                android:id="@+id/firstPinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PinWidget.PinView"
+                app:layout_constraintTop_toBottomOf="@id/otpTextView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="40dp"
+                android:cursorVisible="true"
+                android:hint="-"
+                android:inputType="number"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cursorColor="@color/purple_200"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="4"
+                app:itemHeight="48dp"
+                app:itemRadius="20dp"
+                app:itemSpacing="10dp"
+                app:itemWidth="48dp"
+                app:lineWidth="2dp"
+                app:lineColor="#7400515D"
+                app:viewType="rectangle"
+                android:transitionName="anim4"/>
+    
+            <TextView
+                android:id="@+id/otpTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/firstPinView"
+                android:layout_marginTop="50dp"
+                android:text="@string/resend_code"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"/>
+    
+            
+            <LinearLayout
+                android:id="@+id/buttonVerifyCode"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/roundbutton"
+                android:elevation="8dp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/otpTextView3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="15dp"
+                android:transitionName="anim1"
+                android:onClick="openHomePage">
+        
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/verify_code"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+        
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_circled_chevron_right_filled_foreground" />
+            </LinearLayout>
+            
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    </ScrollView>
+</layout>

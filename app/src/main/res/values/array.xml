@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="id_activityScreenTitles">
+    
+        <item>HOME</item>
+        <item>SEND</item>
+        <item>TRACK</item>
+        <item>HISTORY</item>
+        <item>PROFILE</item>
+        <item>LOG OUT</item>
+        
+    </string-array>
+    
+    <array name="id_activityScreenIcons">
+    
+        <item>@drawable/ic_home1</item>
+        <item>@drawable/ic_cardboard_box_filled</item>
+        <item>@drawable/ic_compass_filled</item>
+        <item>@drawable/ic_past</item>
+        <item>@drawable/ic_user_male_circle_filled</item>
+        <item>@drawable/ic_exit</item>
+    </array>
+</resources>

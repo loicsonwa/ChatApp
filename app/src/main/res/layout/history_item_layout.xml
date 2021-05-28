@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+    
+    <TextView
+        android:id="@+id/textView_hint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:text="Tracking number"
+        android:textColor="#8D00515D"
+        android:fontFamily="@font/poppins"/>
+    <TextView
+        android:id="@+id/textView_trackingNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView_hint1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:text="#001244556332"
+        android:textSize="18sp"
+        android:textColor="@color/purple_200"
+        android:fontFamily="@font/poppins_bold"/>
+    
+    
+    <TextView
+        android:id="@+id/textView_hint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        android:text="Status"
+        android:textColor="#8D00515D"
+        android:fontFamily="@font/poppins"/>
+    
+    <TextView
+        android:id="@+id/textView_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView_hint2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="3dp"
+        android:textSize="12sp"
+        android:text="Waiting Pickup"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/textview_bg2"
+        android:textColor="@color/white"/>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/textView_trackingNum">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+    
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+    
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_geo_fence"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_dashed_line"
+                    android:rotation="90"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_marker"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/textView_pickup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12sp"
+                    android:text="Douala, Cameroun"
+                    android:textColor="@color/purple_200"
+                    android:fontFamily="@font/poppins"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"/>
+    
+                <TextView
+                    android:id="@+id/textView_drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12sp"
+                    android:text="Yaounde, Cameroun"
+                    android:textColor="@color/purple_200"
+                    android:fontFamily="@font/poppins"/>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+    
+    
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        
+            <TextView
+                android:id="@+id/textView_pickup_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="end"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:text="April 6, 18:23"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="end"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="24dp"/>
+        
+            <TextView
+                android:id="@+id/textView_drop_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="end"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:text="May 12, 16:30"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="end"/>
+    
+        </LinearLayout>
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

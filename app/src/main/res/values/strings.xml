@@ -28,4 +28,16 @@
     <string name="verify_text_2">Please type the verification code sent to \nyour phone number</string>
     <string name="resend_code">Didn\'t received OTP? Resend code</string>
     <string name="verify_code">Verify code</string>
+    <string name="continue_without_account">Continue without account</string>
+    <string name="or">Or</string>
+    <string name="register_continue">Continue</string>
+    <string name="create_your_account_here">Create your account \nhere</string>
+    <string name="register_with">Register with :</string>
+    <string name="continue_with">Continue with :</string>
+    <string name="create_an_account">Create an account ?</string>
+    <string name="menu_image">Menu image</string>
+    <string name="notification_image">Notification image</string>
+    <string name="find_the_packages">Find the packages.</string>
+    <string name="enter_your_tracking_number_and_see_details_about_your_package">Enter your tracking number and see \ndetails about your package.</string>
+    <string name="tracking_number_image_view">Tracking number image view</string>
 </resources>
